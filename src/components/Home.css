@@ -1,0 +1,53 @@
+.Home .lander {
+    padding: 80px 0;
+    text-align: center;
+}
+.attention{
+    background-color: red;
+    height: 50px;
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+span {
+    margin-top: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+.test_user_span{
+    cursor : alias
+}
+
+.centered_home_div{
+    width : 1200px;
+    margin : auto
+}
+.home_page_text{
+    color: #204969;
+    margin-top: 15px;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+
+.Home .lander h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+}
+
+.Home .lander p {
+    color: #999;
+}
+.home_center{
+    width: 1200px;
+    position: absolute;
+    top: 140px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
