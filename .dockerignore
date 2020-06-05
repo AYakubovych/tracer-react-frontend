@@ -1,0 +1,5 @@
+.dockerignore
+Dockerfile
+Dockerfile.prod
+README.md
+.idea

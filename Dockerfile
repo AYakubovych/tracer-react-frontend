@@ -1,11 +1,15 @@
-FROM node:8 as build
+
+FROM node:13.12.0-alpine
 
 WORKDIR /app
-COPY package.json index.js ./
-RUN npm install
 
-FROM gcr.io/distroless/nodejs
+ENV PATH ./node_modules/.bin:$PATH
 
-COPY from=build /app /
+COPY package.json ./package.json
+COPY ./build/* ./public/ 
 
+RUN npm install --silent
+RUN npm install react-scripts@3.0.1 -g 
+
+COPY . . 
 CMD ["npm", "start"]

@@ -1,9 +1,10 @@
 import React, {useEffect, useState} from "react";
 
 import axios from 'axios';
-import {API_BASE_URL , ACCESS_TOKEN} from "../constants";
+import {ACCESS_TOKEN} from "../constants";
 import './Profile.css';
 import {Nav} from "react-bootstrap";
+import { API_BASE_URL, ACCESS_TOKEN } from '../constants';
 
 
 export default function Profile() {
@@ -20,7 +21,7 @@ export default function Profile() {
         try{
             /*getCurrentUser().then(res => setUser(res.data))
             */
-            axios.get( 'http://192.168.0.220' +':8080/profile',config).then(res => {
+            axios.get('http://'+ API_BASE_URL +':8080/profile',config).then(res => {
                 setName(res.data.name);
                 setLastName(res.data.lastName);
                 setEmail(res.data.email);
