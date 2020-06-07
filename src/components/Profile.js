@@ -20,7 +20,7 @@ export default function Profile() {
         try{
             /*getCurrentUser().then(res => setUser(res.data))
             */
-            axios.get( 'http://192.168.0.220' +':8080/profile',config).then(res => {
+            axios.get( API_BASE_URL + '/profile',config).then(res => {
                 setName(res.data.name);
                 setLastName(res.data.lastName);
                 setEmail(res.data.email);

@@ -3,12 +3,14 @@ import "./Home.css";
 import '@brainhubeu/react-carousel/lib/style.css';
 import CustomCarousel from "../common/mainPage/CustomCarousel";
 
-import textLogoImg from '../img/logoText.jpg'
-import logoImg from '../img/logo.jpg';
 import {login} from "../util/APIUtils";
 import {ACCESS_TOKEN} from "../constants";
 import {notification} from "antd";
 import {TEST_USER_PASSWORD,TEST_USER_EMAIL} from "../constants/testUser";
+
+import textLogoImg from '../img/logoText.jpg'
+import logoImg from '../img/logo.jpg';
+import frontBack from '../img/svg/front-back.svg';
 
 
 function testUserLogin (){
@@ -52,13 +54,13 @@ export default function Home() {
             </div>
             <div className='wrapper'>
                 <div className="centered_home_div">
-                    <img src={logoImg} width="350" height="350"/>
-                    <img src={textLogoImg} width="750" style={{marginTop:'225px'}}/>
+                    <img src={logoImg} width="120" height="120"/>
+                    <img src={textLogoImg} width="750" style={{marginTop:'15px'}}/>
                 </div>
             </div>
 
             <div className='wrapper'>
-                <h2 className="home_page_text">Created with usage</h2>
+                <h2 className="home_page_text">Powered by</h2>
                 <div className="centered_home_div">
                     <CustomCarousel/>
                 </div>
