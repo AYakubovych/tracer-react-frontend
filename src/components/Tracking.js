@@ -8,6 +8,7 @@ import TimeHOC from "../common/tracking/TimeHOC";
 import {getLocation} from "../util/APIUtils";
 import MapHOC from "../common/tracking/MapHOC";
 import {Input} from "antd";
+import {notification} from "antd";
 
 export class Tracking extends Component{
     constructor(props) {
@@ -24,7 +25,11 @@ export class Tracking extends Component{
     }
 
     handleListClick(index){
-        this.setState(state =>({day : '',time : '',index : index}));
+        this.setState(state =>({day : '',time : '',
+            index : index,
+            clicker : this.state.clicker - 1,
+            isMarkerShow : false
+        }));
     }
 
     setDay(day){
@@ -38,10 +43,14 @@ export class Tracking extends Component{
 
     /*Marker button handler*/
     handleButtonClick(){
-        if(this.state.day != null && this.state.time != null){
+        if(this.state.day !== '' && this.state.time !== ''){
             this.setState(state => ({isMarkerShow : true}))
             this.fetchLocation()
         }else{
+            notification.error({
+                message: 'Error',
+                description: 'You must select day and time!'
+            });
             this.setState(state => ({isMarkerShow : false}))
         }
     }
@@ -86,10 +95,10 @@ export class Tracking extends Component{
                                          index={this.state.index}
                                          handleTimeChange={this.setTime.bind(this)}/>
                                 <Input type="submit"
-                                       className="submit_button"
+                                       className="login_submit_button"
                                        onClick={() => this.handleButtonClick()}
                                        value="Set marker"
-                                       style={{marginTop:'20px'}}/>
+                                       style={{marginTop:'8px'}}/>
                             </div>
                         </div>
                     </div>

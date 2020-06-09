@@ -1,6 +1,15 @@
 .form_block{
     margin-top: 55px;
 }
+.center_block_create {
+    border-radius: 13px;
+    position:absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    top: 340px;
+    background-color:white;
+}
 .text {
     margin-top: 35px;
     text-align: center;
@@ -8,4 +17,38 @@
     font-size: 24px;
     color: #204969;
     font-weight: bold;
+}
+.create_border{
+    width: 350px;
+    min-width: 350px;
+    min-height: 350px;
+    background:white;
+    display:inline-block;
+    float:left;
+    border-width:thin;
+    border-style:solid;
+    border-color:#204969;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.half_field_left{
+    background-color: #F2F2F2;
+    width: 50%;
+    height: 45px;
+    border-right: 1px;
+    border-style: solid;
+    border-color: #204969;
+    font-size: 20px;
+    text-align: center;
+}
+
+.half_field_right{
+    background-color: #F2F2F2;
+    width: 50%;
+    height: 45px;
+    border-left: 1px;
+    border-style: solid;
+    border-color: #204969;
+    font-size: 20px;
+    text-align: center;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import Carousel, { Dots } from '@brainhubeu/react-carousel';
+import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 import './CustomCarousel.css'
 //IMG
@@ -28,49 +28,49 @@ export default function Home() {
 
                     <div className="block">
                         <div className="img_block">
-                            <img src={githubImg} width="250" height="250"/>
+                            <img src={githubImg} width="250" height="250" alt="gitHub"/>
                         </div>
                         <h2 className="img_text">GitHub</h2>
                     </div>
 
                     <div className="block">
                         <div className="img_block">
-                            <img src={androidImg} width="250" height="250"/>
+                            <img src={androidImg} width="250" height="250" alt="android"/>
                         </div>
                         <h2 className="img_text">Android API</h2>
                     </div>
 
                     <div className="block">
                         <div className="img_block">
-                            <img src={hibernateImg} width="250" height="250"/>
+                            <img src={hibernateImg} width="250" height="250" alt="hibernate"/>
                         </div>
                         <h2 className="img_text">Hibernate</h2>
                     </div>
 
                     <div className="block">
                         <div className="img_block">
-                            <img src={postgresImg} width="250" height="250"/>
+                            <img src={postgresImg} width="250" height="250" alt="postgreSQL"/>
                         </div>
                         <h2 className="img_text">Postgres</h2>
                     </div>
 
                     <div className="block">
                         <div className="img_block">
-                            <img src={springImg} width="250" height="250"/>
+                            <img src={springImg} width="250" height="250" alt="spring"/>
                         </div>
                         <h2 className="img_text">Spring</h2>
                     </div>
 
                     <div className="block">
                         <div className="img_block">
-                            <img src={dockerImg} width="250" height="250"/>
+                            <img src={dockerImg} width="250" height="250" alt="docker"/>
                         </div>
                         <h2 className="img_text">Docker</h2>
                     </div>
 
                     <div className="block">
                         <div className="img_block">
-                            <img src={ubuntuImg} width="250" height="250"/>
+                            <img src={ubuntuImg} width="250" height="250" alt="ubuntu"/>
                         </div>
                         <h2 className="img_text">Ubuntu</h2>
                     </div>

@@ -10,8 +10,7 @@ import {TEST_USER_PASSWORD,TEST_USER_EMAIL} from "../constants/testUser";
 
 import textLogoImg from '../img/logoText.jpg'
 import logoImg from '../img/logo.jpg';
-import frontBack from '../img/svg/front-back.svg';
-
+import InfoBar from "../common/mainPage/InfoBar";
 
 function testUserLogin (){
     const loginRequest = {email: TEST_USER_EMAIL, password: TEST_USER_PASSWORD};
@@ -54,8 +53,8 @@ export default function Home() {
             </div>
             <div className='wrapper'>
                 <div className="centered_home_div">
-                    <img src={logoImg} width="120" height="120"/>
-                    <img src={textLogoImg} width="750" style={{marginTop:'15px'}}/>
+                    <img src={logoImg} width="120" height="120" alt="logo"/>
+                    <img src={textLogoImg} width="750" alt="textLogo" style={{marginTop:'15px'}}/>
                 </div>
             </div>
 
@@ -63,6 +62,12 @@ export default function Home() {
                 <h2 className="home_page_text">Powered by</h2>
                 <div className="centered_home_div">
                     <CustomCarousel/>
+                </div>
+            </div>
+
+            <div className='wrapper' style={{position:'relative',marginTop:'15px'}}>
+                <div className="centered_home_div">
+                    <InfoBar/>
                 </div>
             </div>
         </div>

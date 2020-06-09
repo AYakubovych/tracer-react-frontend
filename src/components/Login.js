@@ -47,26 +47,27 @@ class Login extends Component {
 
     render() {
         return (
-            <div className="center_block">
-                <div className="center_top"></div>
+            <div className="center_block_login">
+                <div className="top">
+                    <h4 className="top_text">Fill the fields</h4>
+                </div>
                 <div className="center_border">
-
-                    <h4 className="text">Fill in the fields</h4>
-
                     <div className="form_block">
                         <Form method="post">
                             <Input type="text"
+                                   className="login_form_field"
                                    name="email"
                                    onChange={this.handleChange}
-                                   placeholder="Mail" />
+                                   placeholder="E-Mail" />
 
                             <Input type="password"
                                    name="password"
-                                   placeholder="Pass"
+                                   className="login_last_form_field"
+                                   placeholder="Password"
                                    onChange={this.handleChange}/>
 
                             <Input type="submit"
-                                    className="submit_button"
+                                    className="login_submit_button"
                                     onClick={this.loginLogic}
                                     value="Submit"/>
 

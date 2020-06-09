@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import {Nav, Navbar} from "react-bootstrap";
 import {ACCESS_TOKEN} from "../constants";
+import NavDropdown from "react-bootstrap/NavDropdown";
 
 
 
@@ -34,7 +35,12 @@ class NavigationBar extends Component {
                     <Nav>
                         {localStorage.getItem(ACCESS_TOKEN) !== null
                             ?<>
-                                <Nav.Link href="/profile" style={{ color: "white" }}>Profile</Nav.Link>
+                                <NavDropdown     title={
+                                    <span style={{ color: "white",marginTop:'-4px' }}>Menu</span>
+                                }>
+                                    <NavDropdown.Item href="/tracking" style={{ color: "#204969" }}>Tracking</NavDropdown.Item>
+                                    <NavDropdown.Item href="/profile" style={{ color: "#204969" }}>Profile</NavDropdown.Item>
+                                </NavDropdown>
                                 <Nav.Link onClick={() => this.handleLogout()} style={{ color: "white" }}>Logout</Nav.Link>
                             </>
                             :

@@ -1,0 +1,21 @@
+.home_info_top_text{
+    font-weight : bold
+}
+.home_info_mid_text{
+    color : #5b6987
+}
+.home_info_link{
+    font-family : 'Sailec-Medium','Helvetica','sans-serif';
+    font-style : normal;
+    color : #204969;
+    font-size: 20px;
+    margin-top: -2px;
+    cursor : alias
+}
+.info_bar_div{
+    width : 300px;
+    height : 100px;
+    position : absolute;
+    text-align : left;
+    margin-left : 15px;
+}
