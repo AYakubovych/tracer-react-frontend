@@ -11,6 +11,7 @@ import {TEST_USER_PASSWORD,TEST_USER_EMAIL} from "../constants/testUser";
 import textLogoImg from '../img/logoText.jpg'
 import logoImg from '../img/logo.jpg';
 import InfoBar from "../common/mainPage/InfoBar";
+import DescriptionBar from "../common/mainPage/DescriptionBar";
 
 function testUserLogin (){
     const loginRequest = {email: TEST_USER_EMAIL, password: TEST_USER_PASSWORD};
@@ -55,9 +56,12 @@ export default function Home() {
                 <div className="centered_home_div">
                     <img src={logoImg} width="120" height="120" alt="logo"/>
                     <img src={textLogoImg} width="750" alt="textLogo" style={{marginTop:'15px'}}/>
+                    <h2 className="home_page_text">Control as a tool</h2>
+                    <hr style={{width:'25%'}}/>
                 </div>
             </div>
-
+            <DescriptionBar/>
+            <hr style={{width:'25%'}}/>
             <div className='wrapper'>
                 <h2 className="home_page_text">Powered by</h2>
                 <div className="centered_home_div">
