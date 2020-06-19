@@ -25,34 +25,40 @@ export default function About() {
         <div className='wrapper' style={{marginTop:'15px'}}>
             <div className="centered_home_div">
                 <h5>
-                    Этот проект - дипломная работа, в которой я старался показать свои знания.
-                    Проект разделен на 4 части: Фронтенд, Бакенд, Андроид-сервис и Андроид аппликация.
-                    Для проекта я собрал и настроил сервер, а также открыл к нему доступ в сети интернет с помошю DDNS протокола.
-                    И все это работает вместе ради одной цели - даль возможноть получать данные о местоположении.
+                    This project is my graduation work, in which I am combining the knowledge gained during my studies.
+                    The project is separated into 4 parts: Frontend, Backend, Android service and Android application.
+                    For this project I had built and set up a personal server and also made it accessible in
+                    the Internet by using the DDNS protocol. The main purpose of it is to
+                    gather information about locations of linked users.
 
-                    Начинаеться все с приложения на андроид. В нем осущетвляеться возможноть реистрации пользователя(цели)
-                    и последищее получение и отправка данных о местоположении в RabbitMQ. Для создания я использовал AndroidSDK 19lvl.
+                    The starting point is the Android application, which opportunities involves users registration
+                    that follows up with receiving and sending location data to RabbitMQ queue. In order to create
+                    this application I had used AndroidSDK 19lvl and built it with Gradle.
 
-                    Андроид-сервис работает получателем сообщения с RabbitMQ и Андроид приложения, обработкой данных
-                    и сохранением данных в базу данных. Создан с использованием
-                    Java 8+, Spring(Boot,Data,MVC), PostgreSQL и Maven.
+                    The next part is the Android service, which serves as a message receiver
+                    from RabbitMQ and Android applications. Moreover, it is used to process and save data to the database.
+                    To create this service I had involved Java 8+, Spring(Boot, Data, MVC), PostgreSQL и Maven.
 
-                    Бекенд предназначен для получения и обработки данных с базы данных, обработки асинзронных JSON
-                    запросов с Фронтенда, аутентикации и авторизации пользователя(User) который
-                    хочет получить инфомацию о местоположении Target пользователя.
-                    Написан с использовние Java 8+, Spring(Boot, MVC, Security, Data),
+                    Backend service is intended to receive and process data from the database and further handling
+                    asynchronous JSON requests from the Frontend. It follows with authentication and authorisation
+                    for users who wants to get an information about the location of Android application users.
+                    Having an aim to develop Backend service, I had used Java 8+, Spring(Boot, MVC, Security, Data),
                     Maven, Hibernate, JWT и PostgreSQL.
 
-                    Фронтенд занимаеться получением данных, их отображением, модификацией и отправкой на Бекенд.
-                    Работа с данными осуществляеться с помощю асинхронных запросов.
-                    Создан на основе ReactJS с использованием GoogleMap API для отображения данных о локализации.
+                    The main task of Frontend service is to receive, display, modify and send back data to Backend service.
+                    Communication between services is carried out with the help of asynchronous requests that are represented
+                    in REST architecture. Frontend is based on ReactJS with the usage of GoogleMap API for better
+                    location data visualisation.
 
-                    Сервер, на собранный для этого проекта, работает на ос Ubuntu.
-                    Сервисы запущены на преустановленном Docker. Также, отдельно устанновлены PostgreSQL базаданных и RabbitMQ
-                    Сервер, большую часть времени находиться в рабочем состоянии, но иногда я провожу тех.работы и обслуживание
-                    но они не дляться дольше 24 часов.
+                    The server, which was built for this project, runs on Ubuntu OS.
+                    Additionally, services are deployed on preinstalled Docker PaaS.
+                    Beside that, server was upgraded with PostgreSQL database and RabbitMQ.
 
-                    Ниже представлены схемы комуникации:
+                    Most of the time, there is no problem with connection to the server, however,
+                    from time to time I provide maintenance, which usually lasts no longer than 24 h.
+
+                    Communication schemas are represented bellow:
+
                 </h5>
                     <Button
                         style={{color:'while',backgroundColor:'#204969',borderColor:'#204969',margin:'4px'}}
