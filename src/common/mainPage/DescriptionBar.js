@@ -15,7 +15,7 @@ export default function DescriptionBar() {
                         so it is extremely useful to keep it under the radar.</h5>
                 </div>
             </div>
-            <div className='wrapper' style={{height:'140px'}}>
+            <div className='wrapper' style={{height:'160px'}}>
                 <div className="centered_home_div">
                     <h5 style={{float:'right',width:'450px',textAlign:'right',color:'#204969'}}>
                         The main priority of caring parents is to keep their child in safety.

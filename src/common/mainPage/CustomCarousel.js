@@ -10,6 +10,7 @@ import postgresImg from '../../img/carousel/postgres.jpg';
 import springImg from '../../img/carousel/spring.png';
 import dockerImg from '../../img/carousel/docker.png';
 import ubuntuImg from '../../img/carousel/ubuntu.png';
+import rabbitImg from '../../img/carousel/rabbitMQ.png';
 
 
 
@@ -66,6 +67,13 @@ export default function Home() {
                             <img src={dockerImg} width="250" height="250" alt="docker"/>
                         </div>
                         <h2 className="img_text">Docker</h2>
+                    </div>
+
+                    <div className="block">
+                        <div className="img_block">
+                            <img src={rabbitImg} width="250" height="250" alt="rabbitMQ"/>
+                        </div>
+                        <h2 className="img_text">RabbitMQ</h2>
                     </div>
 
                     <div className="block">
