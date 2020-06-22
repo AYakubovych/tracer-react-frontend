@@ -21,3 +21,10 @@
     color : white;
     border-color : #1F6961;
 }
+.form-popup {
+    display: none;
+    position: absolute;
+    top: 50px;
+    z-index: 9;
+    background-color: white;
+}

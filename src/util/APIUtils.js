@@ -98,3 +98,14 @@ export function getLocation(index,day,time) {
         method: 'GET'
     });
 }
+
+export function addTarget(requestBody) {
+    if (!localStorage.getItem(ACCESS_TOKEN)) {
+        return Promise.reject("No access token set.");
+    }
+    return request({
+        url: API_BASE_URL + "/profile/add/target",
+        method: 'POST',
+        body: JSON.stringify(requestBody)
+    });
+}
