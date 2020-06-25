@@ -60,8 +60,11 @@ export class Tracking extends Component{
             .then(res => {
                 this.setState({lng: res.longitude, lat : res.latitude})
             })
-            .catch(e => {
-                console.log(e);
+            .catch(error => {
+                notification.error({
+                    message: 'Error',
+                    description: error.message || 'Sorry! Something went wrong. Please try again!'
+                });
             });
     }
 

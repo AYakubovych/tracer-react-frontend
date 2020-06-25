@@ -9,6 +9,7 @@ import Signup from "./components/Signup";
 import Profile from "./components/Profile"
 import Tracking from "./components/Tracking";
 import About from "./components/About";
+import Contact from "./components/Contact";
 
 export default function Routes({ appProps }) {
 
@@ -19,6 +20,7 @@ export default function Routes({ appProps }) {
                 <AppliedRoute path="/" exact component={Home} appProps={appProps} />
                 <AppliedRoute path="/signup" exact component={Signup} appProps={appProps} />
                 <AppliedRoute path="/about" exact component={About} appProps={appProps} />
+                <AppliedRoute path="/contact" exact component={Contact} appProps={appProps} />
 
                 <ProtectedRoute path="/profile" exact component={Profile} appProps={appProps} />
                 <ProtectedRoute path="/tracking" exact component={Tracking} appProps={appProps} />

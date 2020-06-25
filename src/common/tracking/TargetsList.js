@@ -45,6 +45,7 @@ const TargetsList = (props) => {
 
                     <Button type="button"
                             className="login_submit_button"
+                            style={{borderRadius:'0'}}
                             onClick={() => formSubmit()}
                     >Add</Button>
                 </form>

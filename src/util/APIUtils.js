@@ -109,3 +109,10 @@ export function addTarget(requestBody) {
         body: JSON.stringify(requestBody)
     });
 }
+export function sendFeedback(feedback) {
+    return request({
+        url: API_BASE_URL + "/mailing/feedback",
+        method: 'POST',
+        body: JSON.stringify(feedback)
+    });
+}
