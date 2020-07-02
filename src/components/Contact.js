@@ -35,6 +35,15 @@ function f() {
         });
 }
 
+function linkedInHref() {
+    var win = window.open("https://www.linkedin.com/in/anton-yakubovych-10a0b6186/", '_blank');
+    win.focus();
+}
+function facebookHref() {
+    var win = window.open("https://www.facebook.com/profile.php?id=100004158363929", '_blank');
+    win.focus();
+}
+
 export default function About() {
 
     return (
@@ -90,8 +99,16 @@ export default function About() {
                             <img src={phoneIcon} width="35" height="35" alt="location"/>
                             <h5>+48 575 818 360</h5>
                             <hr style={{width:'50%'}}/>
-                            <img src={linkedInIcon} width="35" height="35" alt="location"/>
-                            <img src={facebookIcon} width="31" height="31" alt="location"/>
+                            <img src={linkedInIcon}
+                                 width="35"
+                                 height="35"
+                                 alt="location"
+                                 onClick={() => linkedInHref()}/>
+                            <img src={facebookIcon}
+                                 width="31"
+                                 height="31"
+                                 alt="location"
+                                 onClick={() => facebookHref()}/>
                         </div>
                     </div>
 
