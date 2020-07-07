@@ -1,4 +1,4 @@
-export const API_BASE_URL = 'http://ayakubovych.ddns.net:8080';
+export const API_BASE_URL = 'http://localhost:8080';
 export const ACCESS_TOKEN = 'accessToken';
 
 export const FIRST_NAME_MIN_LENGTH = 2;

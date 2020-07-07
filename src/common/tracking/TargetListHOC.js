@@ -1,7 +1,6 @@
 import TargetsList from "./TargetsList";
 import React ,{Component} from "react";
-import {addTarget, getSubTargetsList, login} from "../../util/APIUtils";
-import {ACCESS_TOKEN} from "../../constants";
+import {addTarget, getSubTargetsList} from "../../util/APIUtils";
 import {notification} from "antd";
 
 class TargetListHOC extends Component {
@@ -22,26 +21,21 @@ class TargetListHOC extends Component {
         this.fetchUsers();
     }
 
-    addTarget(email,password){
-        console.log(email + " " + password);
+    addTarget(key){
 
-        const loginRequest = {email: email, password: password};
+        const loginRequest = {key : key};
+
         addTarget(loginRequest)
-            .then(res => {
+            .then( () => {
                     this.afterLogin()
             })
             .catch(error => {
-                if (error.status === 401) {
-                    notification.error({
-                        message: 'Error',
-                        description: 'Email or Password is incorrect. Please try again!'
-                    });
-                } else {
-                    notification.error({
-                        message: 'Error',
-                        description: error.message || 'Sorry! Something went wrong. Please try again!'
-                    });
-                }
+                console.log("error")
+
+                notification.error({
+                    message: 'Error',
+                    description: error.message || 'Sorry! Something went wrong. Please try again!'
+                });
             })
     }
 
