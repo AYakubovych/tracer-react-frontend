@@ -11,6 +11,9 @@ function aboutHref() {
 function contactHref() {
     window.location.assign("/contact");
 }
+function teamHref() {
+    window.location.assign("/team")
+}
 
 export default function InfoBar() {
     return (
@@ -33,7 +36,7 @@ export default function InfoBar() {
                 <img src={humanIcon} width="45" height="45" alt="disc" style={{marginLeft:'-3px'}}/>
                 <h5 className={"home_info_top_text"}>Our core team</h5>
                 <h6 className={"home_info_mid_text"}>Complete information about team members, who worked hard with pleasure, but on a cost-free basis.</h6>
-                <span onClick={() => aboutHref()} className={"home_info_link"}>{/*Team */} In progress</span>
+                <span onClick={() => teamHref()} className={"home_info_link"}>Team ></span>
             </div>
 
             <div className={"info_bar_div"} style={{marginLeft:'900px'}}>

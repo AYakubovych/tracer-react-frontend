@@ -1,0 +1,12 @@
+.team_row{
+    width : 1200px;
+    height : 350px;
+    position : relative;
+    margin-top : 15px;
+}
+.team_border{
+    border-width:thin;
+    border-style:solid;
+    border-color:#204969;
+    display: inline;
+}

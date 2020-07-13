@@ -2,7 +2,7 @@ import React from 'react'
 import 'react-bootstrap-table/dist/react-bootstrap-table-all.min.css'
 import {Button} from "react-bootstrap";
 import "./TargetList.css";
-import { Form, Input,notification } from 'antd';
+import {Input} from 'antd';
 
 const TargetsList = (props) => {
 
@@ -16,7 +16,6 @@ const TargetsList = (props) => {
 
     function formSubmit() {
         props.addTarget(document.getElementById("key").value);
-
     }
 
     return (
